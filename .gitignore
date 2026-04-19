@@ -1,0 +1,80 @@
+# Environment and Python cache
+.env/
+**/.env/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Django local files
+*.sqlite3
+
+# Local secrets
+.env.*
+!.env.example
+
+# Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# ML artifacts and data files (keep code/notebooks only)
+backend/model_scaler_encoder/*.pkl
+backend/model_scaler_encoder/*.h5
+backend/model_scaler_encoder/*.csv
+backend/model_scaler_encoder/Datasets/
+external_api/data_server/data/*.csv
+not/data_server/data/*.csv
+
+# Flutter/Dart generated and build outputs
+frontend/.dart_tool/
+frontend/build/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.packages
+frontend/pubspec.lock
+frontend/**/ephemeral/
+frontend/**/Generated.xcconfig
+frontend/**/flutter_export_environment.sh
+frontend/**/generated_plugin_registrant.*
+frontend/**/generated_plugins.cmake
+
+# IDE and OS files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Build products and binaries
+*.log
+*.tmp
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+*.obj
+*.class
+*.jar
+*.apk
+*.ipa
+*.app
+*.xcarchive
+
+# Generated app icons/assets
+frontend/web/favicon.png
+frontend/web/icons/
+frontend/macos/Runner/Assets.xcassets/AppIcon.appiconset/
+frontend/windows/runner/resources/app_icon.ico
+
+# Duplicate scratch project folder
+not/
+
+# Local docs not for code-only repo commit
+DEPLOYMENT.md
+QUICKSTART.md
